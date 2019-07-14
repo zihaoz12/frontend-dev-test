@@ -1,0 +1,137 @@
+@import "~bootstrap/scss/bootstrap";
+
+*{
+    scroll-behavior: smooth;
+    box-sizing: border-box;
+}
+body {
+    margin: 0;
+}
+div{
+    display: block;
+}
+header{
+    position: fixed;
+    font-size: 1.5rem;
+    font-weight: 100;
+}
+button{
+    text-transform: uppercase;
+    color: white;
+    text-align: center;
+    font-weight: bold;
+    min-width: 150px; 
+    position: relative;
+    margin:15px;
+    padding:15px 30px; 
+    cursor: pointer;
+}
+.container-fluid{
+    padding-left: 0px;
+    padding-right:0px;
+}
+section h1,h2{
+    text-transform: uppercase;
+    font-size: 2.5em;
+}
+
+
+
+.welcome-section{
+    width:100%;
+    height: 700px; 
+    min-height: 40%;
+    background-image: url('../../assets/hero.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    text-align: center;   
+}
+
+.welcome-section .container{
+    margin:0 auto;
+    padding:230px;
+    position: relative;
+}
+.hero{
+    color: white;
+    font-size:2.5em;
+}
+
+.hero h1{
+    font-family: 'Londrina Outline', cursive;
+    font-size: 200%;
+}
+
+.hero h3{
+    font-family: 'Merriweather Sans', sans-serif;
+    font-size: 150%;
+}
+
+.welcome-btn{
+    border: 2px solid #AB72C0;
+    background-color: #AB72C0;
+}
+.section-btn{
+    border: 2px solid #f96d15;
+    background-color: #f96d15;
+}
+
+.section-3{
+    width:100%;
+    height: 700px;
+    background: url('../../assets/banner-1.jpg') no-repeat center / cover;
+}
+
+.section-3 .container{
+    padding: 250px 150px;
+    float: left;
+}
+
+.section-5{
+    width:100%;
+    height: 700px;
+    min-height: 40%;
+    background: url('../../assets/banner-2.jpg') no-repeat center / cover;
+}
+
+.section-5 .container{
+    padding: 120px;
+    float: right;
+}
+
+.icons-container{
+    background: #f7f7f7;
+    width:100%;
+    height: 600px;
+    border:1px solid black;
+}
+.icon{
+    width: 150px;
+    height: 150px;
+    border: 1px solid #AB72C0;
+    border-radius: 50%;
+    text-align: center;
+    margin: 60px auto;
+    padding:5px;
+}
+.icon img{
+    width: 70%;
+    height: 70%;
+    margin: 15px auto;
+}
+footer{
+    background-color: #f7f7f7;
+}
+
+.social-links{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.social-links img{
+    width: 50px;
+    height: 50px;
+    margin:5px 15px;
+}
