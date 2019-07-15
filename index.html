@@ -4,98 +4,109 @@
     <meta charset="utf-8">
     <title>Rooster Grin Front End Dev Test</title>
     <!--Google Fonts-->
-    <link href="https://fonts.googleapis.com/css?family=Londrina+Outline|Merriweather+Sans&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Londrina+Outline|Merriweather+Sans|Wendy+One&display=swap" rel="stylesheet">
+    <!--FontAwesome-->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" 
+    integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
     <!-- //Bootstrap -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
   </head>
   <body>
 
-    <header>
+    <nav id="headerNav" class="navbar navbar-dark fixed-top navbar-transparent">
       <div class="container">
-          <nav class="nav-bar header-nav">
-              <a class="nav-title">RoosterGrin</a>
-            </nav>
+        <a class="nav-brand">RoosterGrin</a>
       </div>
-    </header>
+    </nav>
 
     <main>
       <section class="welcome-section">     
           <div class="container container-fluid">
-            <div class="hero">
-              <h1>Welcome to</h1>
+            <div class="hero animated fadeIn">
+              <h1 class="welcome-title">Welcome to</h1>
               <h3>Rooster Grin</h3>      
             </div>
-            <button class="welcome-btn" id="welcome">Button Button</button>
+            <button class="welcome-btn animated fadeIn" id="welcome">Button Button</button>
           </div>           
       </section>
 
       <section class="section-2">
-        <div class="container-fluid">
-          <div class="row justify-content-center">
-            <div class="col-lg-6 p-5">
+          <div class="row no-gutters">
+            <div class="col-md-6">
+              <div class="container">
               <h1>Lorem</h1>
               <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi, rem necessitatibus quas, laudantium dolore placeat laboriosam aliquid voluptatibus nemo architecto velit, quasi nesciunt aperiam impedit cupiditate magnam consequuntur nihil perferendis. Tempora, ab, quia mollitia cum saepe esse unde temporibus minus consequatur voluptatem ullam, ipsa aliquid deserunt pariatur. Pariatur, recusandae neque.</p>
               <a href="#">> Lorem ipsum</a>
+              </div>
             </div>
         
-            <div class="col-lg-6">
-              <img class=""src="./assets/img-1.jpg" alt="img">
+            <div class="col-md-6">
+              <img class="img-responsive"src="./assets/img-1.jpg" alt="img-1">
             </div>
-          </div>
-        </div>       
+          </div>       
       </section>
 
       <section class="section-3">
-        <div class="container">
-          <div class="row">
-            <div class="col-md-6">
+        <div class="row no-gutters">
+          <div class="col-md-6 col-sm-6">
+            <div class="container">
               <h2>Lorem Ipsum</h2>
               <button class="section-btn">Button Button</button>
             </div>
-            <div class="col-md-6">
-            </div>
+          </div>
+          <div class="col-md-6 col-sm-6">
           </div>
         </div>
       </section>
 
-      <section class="section-4">
-        <div class="container-fluid">
-          <div class="row">
-            <div class="col-lg-6 p-5">
-              <h2>Lorem ipsum dolor sit amer</h2>
-              <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laudantium, dolor! Reiciendis sequi id, odio aut repudiandae hic quis veniam nemo quisquam tenetur, fuga distinctio perferendis, quasi cum? Laborum culpa facere consectetur eum nihil, expedita, perferendis debitis esse, error quod ea iste mollitia dicta nam maxime.</p>
-              <a href="#">> Lorem Ipsum</a>
+      <section class="section-4">      
+          <div class="row no-gutters">
+            <div class="col-md-6">
+              <div class="container">
+                <h2>Lorem ipsum dolor sit amer</h2>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laudantium, dolor! Reiciendis sequi id, odio aut repudiandae hic quis veniam nemo quisquam tenetur, fuga distinctio perferendis, quasi cum? Laborum culpa facere consectetur eum nihil, expedita, perferendis debitis esse, error quod ea iste mollitia dicta nam maxime.</p>
+                <a href="#">> Lorem Ipsum</a>
+              </div>
             </div>
             
-            <div class="col-lg-6 icons-container">
-                <div class="row">
-                  <div class="col-lg-6">
-                    <div class="icon"><img src="./assets/home-expertise.svg" alt="lorem"></div>
+            <div class="col-md-6  icons-container">
+                <div class="row no-gutters">
+                  <div class="col-md-6 col-sm-6">
+                    <div class="icon">
+                      <a href="#"><img src="./assets/home-expertise.svg" alt="lorem"></a>
+                      <h5 class="icon-title">Lorem</h5>
+                    </div>          
                   </div>
-                  <div class="col-lg-6">
-                      <div class="icon"><img src="./assets/home-hygiene.svg" alt="lorem"></div>
+                  <div class="col-md-6 col-sm-6">
+                    <div class="icon">
+                      <a href="#"><img src="./assets/home-hygiene.svg" alt="lorem"></a>
+                      <h5 class="icon-title">Lorem Ipsum</h5>
+                    </div>
                   </div>
-                </div>
-                <div class="row">
-                  <div class="col-lg-6">
-                    <div class="icon"><img src="./assets/home-lab.svg" alt="lorem"></div>
+                  <div class="col-md-6 col-sm-6">
+                    <div class="icon">
+                      <a href="#"><img src="./assets/home-lab.svg" alt="lorem"></a>
+                      <h5 class="icon-title">Lorem Ipsum</h5>
+                    </div>
                   </div>
-                  <div class="col-lg-6">
-                    <div class="icon"><img src="./assets/home-retention.svg" alt="lorem"></div>
+                  <div class="col-md-6 col-sm-6">
+                    <div class="icon">
+                      <a href=#><img src="./assets/home-retention.svg" alt="lorem"></a>
+                      <h5 class="icon-title">Lorem</h5>
+                    </div>
                   </div>
                 </div>
               </div>
             </div>
-          </div>
-        </div>
+          </div> 
       </section>
 
       <section class="section-5">
-        <div class="container">
-          <div class="row">
-            <div class="col-md-6">
-            </div>
-            <div class="col-md-6">
+        <div class="row no-gutters">
+          <div class="col-md-6">
+          </div>
+          <div class="col-md-6">
+            <div class="container">
               <h2>Lorem Ipsum</h2>
               <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero natus eum ut totam ducimus voluptates exercitationem, dolorum perferendis eveniet cum, possimus voluptatibus reprehenderit, deleniti quia.</p>
               <button class="section-btn">Button Button</button>
@@ -104,17 +115,58 @@
         </div>
       </section>
 
-      <section class="section-6 container">
-        <div class="row">
-          <div class="col-md-6">
-            <h2>Lorem ipsum dolor sit ame</h2>
+      <section class="section-6">
+        <div class="row no-gutters">
+          <div class="col-md-6 text-contents">
+            <div class="container">
+              <h2>Lorem ipsum dolor sit ame</h2>
+              <div class="stars-container">
+                <span><i class="fas fa-star fa-lg"></i></span>
+                <span><i class="fas fa-star fa-lg"></i></span>
+                <span><i class="fas fa-star fa-lg"></i></span>
+                <span><i class="fas fa-star fa-lg"></i></span>
+                <span><i class="fas fa-star fa-lg"></i></span>
+              </div>
+            </div>
           </div>
           <div class="col-md-6">
-
+            <div id="carouselContents" class="carousel slide" data-ride="carousel">
+              <ol class="carousel-indicators">
+                <li data-target="#carouselContents" data-slide-to="0" class="active"></li>
+                <li data-target="#carouselContents" data-slide-to="1" ></li>
+                <li data-target="#carouselContents" data-slide-to="2" ></li>
+              </ol>
+              <div class="carousel-inner" role="listbox">
+                <div class="carousel-item active text-center">
+                  <h5><a href="#">John Doe 08/08/2019</a></h5>
+                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque dolorum placeat reprehenderit. Est error quo omnis odit, quia fugiat laboriosam, et maxime, odio atque nihil officia vero dolorem pariatur soluta hic nesciunt qui quae. Ratione dolor natus ipsum at ad nesciunt laboriosam sed suscipit, eius magni iste! Aliquid, eius cupiditate?</p>
+                </div>
+                <div class="carousel-item text-center">
+                  <h5><a href="#">Second Doe</a></h5>
+                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque dolorum placeat reprehenderit. Est error quo omnis odit, quia fugiat laboriosam, et maxime, odio atque nihil officia vero dolorem pariatur soluta hic nesciunt qui quae. Ratione dolor natus ipsum at ad nesciunt laboriosam sed suscipit, eius magni iste! Aliquid, eius cupiditate?</p>
+                </div>
+                <div class="carousel-item text-center">
+                  <h5><a href="#">Third Doe</a></h5>
+                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque dolorum placeat reprehenderit. Est error quo omnis odit, quia fugiat laboriosam, et maxime, odio atque nihil officia vero dolorem pariatur soluta hic nesciunt qui quae. Ratione dolor natus ipsum at ad nesciunt laboriosam sed suscipit, eius magni iste! Aliquid, eius cupiditate?</p>
+                </div>              
+              </div>
+              <a class="carousel-control-prev" href="#carouselContents" role="button" data-slide="prev">
+                <span class="caroursel-control-prev-icon" aria-hidden="true"><</span>
+                <span class="sr-only">Previous</span>
+              </a>
+              <a class="carousel-control-next" href="#carouselContents" role="button" data-slide="next">
+                <span class="caroursel-control-next-icon" aria-hidden="true">></span>
+                <span class="sr-only">Next</span>
+              </a>
+            </div>
           </div>
         </div>
       </section>
     </main>
+
+    <div id="backToTop" class="back-to-top">
+        <a class="top-btn"><span><i class="fas fa-arrow-alt-circle-up fa-3x"></i></span></a>
+    </div>
 
     <footer>
       <div class="container text-center py-3">
