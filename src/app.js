@@ -13,19 +13,19 @@ $(function(){
   })
 });
 
-// $(function(){
-// 	$(window).scroll(function(){
-// 		let top1 = $(this).scrollTop();
-// 		if(top1>300){
-// 			$("#backToTop").stop().fadeIn().css("display","block");
-// 		}else{
-// 			$("#backToTop").stop().fadeOut();
-// 		}
-// 	});
+$(function(){
+	$(window).scroll(function(){
+		let top1 = $(this).scrollTop();
+		if(top1>300){
+			$(".back-to-top").stop().fadeIn().css("display","block");
+		}else{
+			$(".back-to-top").stop().fadeOut();
+		}
+	});
 
-// 	$("#backToTop").click(function(){
-// 		$(" body, html").animate({
-// 			scrollTop:0
-// 		},300);
-// 	});	
-// });
+	$(".back-to-top").click(function(){
+		$(" body, html").animate({
+			scrollTop:0
+		},300);
+	});
+});

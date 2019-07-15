@@ -49,6 +49,11 @@ button{
     padding:15px 30px; 
     cursor: pointer;
 }
+
+button:hover{
+    transform: translate3d(0,2px,0);
+    opacity: 0.75;
+}
 .container-fluid{
     padding-left: 0px;
     padding-right:0px;
@@ -80,40 +85,70 @@ section h1,h2{
     font-family: 'Londrina Outline', cursive;
     font-size: 200%;
     color: white;
-    font-size: 3.5em;
+    font-size: 4.5em;
 }
 
 .hero h3{
     font-family: 'Merriweather Sans', sans-serif;
     font-size: 150%;
     color: white;
+    font-size: 3.0em;
 }
 
 .animated{
-    -webkit-animation-duration: 10s;
-    animation-duration: 10s;
+    -webkit-animation-duration: 5s;
+    animation-duration: 5s;
     -webkit-animation-fill-mode: both;
     animation-fill-mode: both;
 }
+
+.animatedFadeInup{
+    opacity: 0;
+}
+
 @-webkit-keyframes fadeIn {
-    0% {opacity: 0;}
-    100% {opacity: 1;}
- }
- 
- @keyframes fadeIn {
     0% {opacity: 0;}
     100% {opacity: 1;}
 }
  
+@keyframes fadeIn {
+    0% {opacity: 0;}
+    100% {opacity: 1;}
+}
+@-webkit-keyframes fadeInUp{
+    from{
+        transform: translate3d(0,40px,0)
+    }
+    to{
+        transform: translate3d(0,0,0);
+        opacity: 1;
+    }
+}
+ 
+@keyframes fadeInUp{
+    from{
+        transform: translate3d(0,40px,0)
+    }
+    to{
+        transform: translate3d(0,0,0);
+        opacity: 1;
+    }
+}
 .fadeIn {
     -webkit-animation-name: fadeIn;
     animation-name: fadeIn;
+}
+.fadeInUp{
+    opacity: 0;
+    animation-name: fadeInUp;
+    -webkit-animation-name: fadeInUp;
 }
 
 .welcome-btn{
     border: 2px solid #AB72C0;
     background-color: #AB72C0;
 }
+
 .section-btn{
     border: 2px solid #f96d15;
     background-color: #f96d15;
@@ -135,7 +170,7 @@ section h1,h2{
 }
 
 .section-3 .container{
-    padding: 40% 20%;
+    padding: 40% 12%;
 }
 
 .section-4 .container{
@@ -144,7 +179,7 @@ section h1,h2{
 
 .icons-container{
     background: #f7f7f7;
-    padding: 10% 10%;
+    padding: 5% 10%;
 }
 
 .icon{
@@ -154,12 +189,12 @@ section h1,h2{
     border-radius: 50%;
     text-align: center;
     margin: 25px auto;
-    position: relative;
 }
 .icon img{
     width: 70%;
     height: 70%;
     margin: 15px auto;
+    position: relative;
 }
 
 .icon-title{
@@ -175,7 +210,7 @@ section h1,h2{
 }
 
 .section-5 .container{
-    padding: 20% 20%;
+    padding: 20% 5% 20% 20%;
 }
 
 .section-6 .container{
@@ -196,11 +231,20 @@ section h1,h2{
     padding:50px;
     line-height: 1.5;
 }
-#carouselContents a{
-    font-size: 1.5rem;
+
+.carousel-control-prev, .carousel-control-next{
+    width: 10%;
+}
+#carouselContents span{
+    font-size: 2.0rem;
     color: black;
 }
-
+.carousel-item a{
+    color: #621e81;
+}
+.carousel-item h5{
+    text-align: center;
+}
 .carousel-indicators{
    margin: 0px auto;
 }
@@ -234,4 +278,57 @@ footer{
     bottom: 100px;
     display: none;
     cursor: pointer;
+}
+
+.icon-1{
+    transition: all .2s ease-in-out;
+}
+
+.icon-1:hover img{
+    transform: scale(1.5) rotate(25deg);
+}
+
+
+.icon-2:hover img{
+    animation: shake 0.5s; 
+    animation-iteration-count: infinite; 
+  }
+  
+@keyframes shake {
+    0% { transform: translate(1px, 1px) rotate(0deg); }
+    10% { transform: translate(-1px, -2px) rotate(-1deg); }
+    20% { transform: translate(-3px, 0px) rotate(1deg); }
+    30% { transform: translate(3px, 2px) rotate(0deg); }
+    40% { transform: translate(1px, -1px) rotate(1deg); }
+    50% { transform: translate(-1px, 2px) rotate(-1deg); }
+    60% { transform: translate(-3px, 1px) rotate(0deg); }
+    70% { transform: translate(3px, 1px) rotate(-1deg); }
+    80% { transform: translate(-1px, -1px) rotate(1deg); }
+    90% { transform: translate(1px, 2px) rotate(0deg); }
+    100% { transform: translate(1px, -2px) rotate(-1deg); }
+}
+
+.icon-3:hover img{
+    animation: ro 2s linear infinite;
+}
+@keyframes ro{
+    0%{
+        transform: rotate(0);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
+
+.icon-flip{
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+}
+
+.icon-4:hover .icon-flip{
+    transform: rotateY(180deg)
+}
+
+.icon-front, .icon-back{
+    backface-visibility: hidden;
 }
