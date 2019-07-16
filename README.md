@@ -1,5 +1,6 @@
 # front-end-dev-test
 
+To see the Live Demo, go to [https://nervous-beaver-1ad3c5.netlify.com/](https://nervous-beaver-1ad3c5.netlify.com/)
 
 ## Instructions
 
