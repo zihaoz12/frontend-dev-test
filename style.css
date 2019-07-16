@@ -11,8 +11,12 @@ div{
 .row.no-gutters {
     margin-right: 0;
     margin-left: 0;
-    padding-right: 0;
-    padding-left: 0;
+ 
+    & > [class^="col-"],
+    & > [class*=" col-"] {
+      padding-right: 0;
+      padding-left: 0;
+    }
 }
 #headerNav{
     font-size: 1.5rem;
@@ -243,7 +247,7 @@ section h1,h2{
    margin: 0px auto;
 }
 
-.carousel-indicators li{
+#carousel-indicator{
     width: 10px;
     height: 10px;
     border-radius: 100%;
@@ -268,8 +272,8 @@ footer{
 
 .back-to-top{
     position: fixed;
-    right: 100px;
-    bottom: 100px;
+    right: 50px;
+    bottom: 50px;
     display: none;
     cursor: pointer;
 }
