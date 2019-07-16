@@ -2,15 +2,16 @@
   "name": "roostergrin-front-end-dev-test",
   "version": "1.0.0",
   "description": "Test",
-  "main": "main.js",
+  "main": "server.js",
   "scripts": {
     "start": "webpack-dev-server --hot --inline",
     "build": "webpack",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "heroku-postbuild": "webpack -p"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/roostergrin/front-end-dev-test"
+    "url": "git+https://github.com/roostergrin/front-end-dev-test.git"
   },
   "author": "Rooster Grin",
   "license": "ISC",
@@ -21,6 +22,7 @@
   "dependencies": {
     "bootstrap": "^4.3.1",
     "expose-loader": "^0.7.5",
+    "express": "^4.17.1",
     "file-loader": "^4.0.0",
     "jquery": "^3.4.1",
     "popper.js": "^1.15.0",

@@ -38,13 +38,13 @@ These required features are some problems that you would face when building a cl
 
   1. What you technologies you used and why (if you only used html, css, and js please explain any templates or frameworks you may have used i.e. bootstrap)
 
-    For this project, I only used HTML,CSS, and jQuery. And I have also used BootStrap for the Grid System and Carousel function.
+  For this project, I only used HTML,CSS, and jQuery. And I have also used BootStrap for the Grid System and Carousel function.
 
   2. Any struggles you faced when developing with technology you chose
 
-    I had some hard time on making the web page become responsive. Because of the page layout and spacing will change on different screen. Each time I had created a new element, I would have to go back to make sure it would fit on different screen.It took me some time to fix these error spacings. 
+  I had some hard time on making the web page become responsive. Because of the page layout and spacing will change on different screen. Each time I had created a new element, I would have to go back to make sure it would fit on different screen.It took me some time to fix these error spacings. 
     
   3. What you enjoyed the most and why
 
-    Even though, trouble shooting and fixing bugs are painful in sometime. It feels great when I can figure out the solutions and I enjoyed to see the result that I want was perfectly showing on the screen.
+  Even though, trouble shooting and fixing bugs are painful in sometime. It feels great when I can figure out the solutions and I enjoyed to see the result that I want was perfectly showing on the screen.
 
