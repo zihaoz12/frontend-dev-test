@@ -152,6 +152,7 @@ section h1,h2{
 .section-2 img{
     width:100%;
     height: auto;
+    min-height: 40%;
 }
 
 .section-3{
