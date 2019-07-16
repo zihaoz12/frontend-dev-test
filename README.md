@@ -1,22 +1,12 @@
 # front-end-dev-test
 
-## Intro
 
-Congratulations on making it to the testing phase of the hiring process! For this part of the hiring process, we would like to learn about your creativity, how well you code, and how well you follow instructions.
+## Instructions
 
-You will need to have knowledge of some key things before you start:
-  - how to run a local server
-  - how to connect your markup to your scripts and styles
-  - front end web development
+1.  Clone this repo
+2.  Run `npm install`
+3.  Run `npm run dev`, **localhost:8080** will open up in your default browser
 
-We have supplied an optional development server and some development dependencies for this project, but feel free to use the development framework of your choice (e.g. create-react-app, vue cli, etc). You are not required to use the codebase provided in this repository, but feel free to use it! If you choose to use this codebase, you can run the development server using the commands found below:
-
-<pre>
-  npm install
-  npm start
-</pre>
-
-<em>NOTE: You will need node and npm on your machine if you choose to use the supplied server, also for hosting you will need to set it up yourself.</em>
 
  😎
 
